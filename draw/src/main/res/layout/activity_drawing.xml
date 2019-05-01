@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.DrawingActivity">
 
-    <com.divyanshu.draw.widget.DrawView
+    <com.mem.draw.widget.DrawView
         android:id="@+id/draw_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -132,7 +132,7 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp" />
 
-        <com.divyanshu.draw.widget.CircleView
+        <com.mem.draw.widget.CircleView
             android:id="@+id/circle_view_width"
             android:layout_width="56dp"
             android:layout_height="56dp"
@@ -150,7 +150,7 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp" />
 
-        <com.divyanshu.draw.widget.CircleView
+        <com.mem.draw.widget.CircleView
             android:id="@+id/circle_view_opacity"
             android:layout_width="56dp"
             android:layout_height="56dp"

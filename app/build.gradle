@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.divyanshu.androiddraw"
+        applicationId "com.mem.androiddraw"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 3
