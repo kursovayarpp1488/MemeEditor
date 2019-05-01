@@ -17,6 +17,8 @@ import com.divyanshu.draw.widget.DrawView
 import kotlinx.android.synthetic.main.activity_drawing.*
 import kotlinx.android.synthetic.main.color_palette_view.*
 import java.io.ByteArrayOutputStream
+import java.time.*;
+
 
 class DrawingActivity : AppCompatActivity() {
 
@@ -29,13 +31,13 @@ class DrawingActivity : AppCompatActivity() {
         }
         fab_send_drawing.setOnClickListener {
             val bStream = ByteArrayOutputStream()
-            val bitmap = draw_view.getBitmap()
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, bStream)
-            val byteArray = bStream.toByteArray()
-            val returnIntent = Intent()
-            returnIntent.putExtra("bitmap", byteArray)
-            setResult(Activity.RESULT_OK,returnIntent)
-            finish()
+            val bitmap = draw_view.getBitmap();
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, bStream);
+            val byteArray = bStream.toByteArray();
+            val returnIntent = Intent();
+            returnIntent.putExtra("bitmap", byteArray);
+            setResult(Activity.RESULT_OK,returnIntent);
+            finish();
         }
 
         setUpDrawTools()
@@ -59,6 +61,8 @@ class DrawingActivity : AppCompatActivity() {
             toggleDrawTools(draw_tools,false)
             true
         }
+
+
         image_draw_width.setOnClickListener {
             if (draw_tools.translationY == (56).toPx){
                 toggleDrawTools(draw_tools,true)
