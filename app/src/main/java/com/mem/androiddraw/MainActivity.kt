@@ -25,7 +25,12 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 private const val REQUEST_CODE_DRAW = 101
+private const val REQUEST_CODE_COLOR = 103;
+private const val REQUEST_CODE_IMG = 104;
+
 private const val PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 102
+var ColorNubm = Int.MIN_VALUE;
+var ImgId = Int.MIN_VALUE;
 class MainActivity : AppCompatActivity() {
 
     lateinit var adapter: DrawAdapter
@@ -34,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-            != PackageManager.PERMISSION_GRANTED){
+                != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this,
                     arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),
                     PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE)
@@ -42,8 +47,17 @@ class MainActivity : AppCompatActivity() {
             adapter = DrawAdapter(this,getFilesPath())
             recycler_view.adapter = adapter
         }
+
+        SColor.setOnClickListener{
+            var intent2 = android.content.Intent(this@MainActivity, ColorChoice::class.java)
+            startActivityForResult(intent2, REQUEST_CODE_COLOR);
+        }
+
         fab_add_draw.setOnClickListener {
+
             val intent = Intent(this, DrawingActivity::class.java)
+            intent.putExtra("color", ColorNubm);
+            intent.putExtra("imgid", ImgId);
             startActivityForResult(intent, REQUEST_CODE_DRAW)
         }
     }
@@ -67,6 +81,18 @@ class MainActivity : AppCompatActivity() {
                     val result= data.getByteArrayExtra("bitmap")
                     val bitmap = BitmapFactory.decodeByteArray(result, 0, result.size)
                     showSaveDialog(bitmap)
+                }
+
+                REQUEST_CODE_COLOR ->{
+                    val result: Int = data.extras.getInt("color");
+                    ColorNubm = result;
+                    ImgId = Int.MIN_VALUE;
+                }
+
+                REQUEST_CODE_IMG ->{
+                    val result: Int = data.extras.getInt("imgid");
+                    ImgId = result;
+                    ColorNubm = Int.MIN_VALUE;
                 }
             }
         }
@@ -120,5 +146,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateRecyclerView(uri: Uri) {
         adapter.addItem(uri)
+    }
+
+    public override fun onPause() {
+        super.onPause()
     }
 }

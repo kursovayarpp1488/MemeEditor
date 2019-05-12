@@ -2,6 +2,7 @@ package com.mem.draw.widget
 
 import android.content.Context
 import android.graphics.*
+import android.graphics.drawable.ColorDrawable
 import android.support.annotation.ColorInt
 import android.support.v4.graphics.ColorUtils
 import android.util.AttributeSet
@@ -18,13 +19,15 @@ class DrawView(context: Context, attrs: AttributeSet) : View(context, attrs) {
     private var mPaint = Paint()
     private var mPath = MyPath()
     private var mPaintOptions = PaintOptions()
-
     private var mCurX = 0f
     private var mCurY = 0f
     private var mStartX = 0f
     private var mStartY = 0f
     private var mIsSaving = false
     private var mIsStrokeWidthBarEnabled = false
+
+    public var CurrentColor = Color.WHITE;
+
 
     var isEraserOn = false
         private set
@@ -120,7 +123,8 @@ class DrawView(context: Context, attrs: AttributeSet) : View(context, attrs) {
     }
 
     private fun changePaint(paintOptions: PaintOptions) {
-        mPaint.color = if (paintOptions.isEraserOn) Color.WHITE else paintOptions.color
+        //mPaint.color = if (paintOptions.isEraserOn) Color.WHITE else drawingCacheBackgroundColor;
+        mPaint.color = if (paintOptions.isEraserOn) CurrentColor else paintOptions.color;
         mPaint.strokeWidth = paintOptions.strokeWidth
     }
 

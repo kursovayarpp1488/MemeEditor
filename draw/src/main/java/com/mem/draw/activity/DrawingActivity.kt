@@ -5,12 +5,15 @@ import android.content.Intent
 import android.content.res.ColorStateList
 import android.content.res.Resources
 import android.graphics.Bitmap
+import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.constraint.ConstraintLayout
 import android.support.v4.content.res.ResourcesCompat
 import android.support.v4.widget.ImageViewCompat
 import android.util.Log
 import android.view.View
+import android.widget.ImageView
 import android.widget.SeekBar
 import com.mem.draw.R
 import com.mem.draw.widget.DrawView
@@ -28,6 +31,27 @@ class DrawingActivity : AppCompatActivity() {
 
         image_close_drawing.setOnClickListener {
             finish()
+        }
+        var ClrNumb = intent.extras.getInt("color");
+        var ImgId = intent.extras.getInt("imgid");
+
+
+        var tmpDRW = findViewById<DrawView>(R.id.draw_view);
+        var tmpIMCLOSE = findViewById<ImageView>(R.id.image_close_drawing);
+        var tmpClayout = findViewById<ConstraintLayout>(R.id.draw_tools)
+
+
+        if (ImgId != Int.MIN_VALUE) {
+            //tmpDRW.setBackgroundResource(R.drawable.fire);
+            tmpClayout.setBackgroundColor(Color.WHITE);
+            tmpIMCLOSE.setBackgroundColor(Color.WHITE);
+            tmpDRW.CurrentColor = Color.WHITE;
+        }
+        if (ClrNumb != Int.MIN_VALUE) {
+            tmpDRW.CurrentColor = ClrNumb;
+            tmpDRW.setBackgroundColor(ClrNumb);
+            tmpClayout.setBackgroundColor(ClrNumb);
+            tmpIMCLOSE.setBackgroundColor(ClrNumb);
         }
         fab_send_drawing.setOnClickListener {
             val bStream = ByteArrayOutputStream()
