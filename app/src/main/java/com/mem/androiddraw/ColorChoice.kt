@@ -19,27 +19,9 @@ class ColorChoice : Activity(){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.choice_layout);
         ListOfColors = mutableListOf<Int>();
-        ListOfColors!!.add(Color.BLUE);
-        ListOfColors!!.add(Color.BLACK);
-        ListOfColors!!.add(Color.CYAN);
-        ListOfColors!!.add(Color.DKGRAY);
-        ListOfColors!!.add(Color.GRAY);
-        ListOfColors!!.add(Color.LTGRAY);
-        ListOfColors!!.add(Color.MAGENTA);
-        ListOfColors!!.add(Color.RED);
-        ListOfColors!!.add(Color.WHITE);
-        ListOfColors!!.add(Color.YELLOW);
-        ListOfColors!!.add(Color.rgb(128, 0, 128));
-        ListOfColors!!.add(Color.rgb(255,0,255));
-        ListOfColors!!.add(Color.rgb(0,255,255));
-        ListOfColors!!.add(Color.rgb(255,69,0));
-        ListOfColors!!.add(Color.rgb(128,0,0));
-        ListOfColors!!.add(Color.rgb(0,255,0));
-        ListOfColors!!.add(Color.rgb(0,0,128));
-        ListOfColors!!.add(Color.rgb(218,165,32));
-        ListOfColors!!.add(Color.rgb(255,228,196));
-        ListOfColors!!.add(Color.rgb(128,128,0));
-        ListOfColors!!.add(Color.rgb(255,215,0));
+
+        for (name in colorArray)
+            ListOfColors!!.add(Color.parseColor(name));
 
 
         ClrList = findViewById<ListView>(R.id.LV)
@@ -60,6 +42,10 @@ class ColorChoice : Activity(){
         }
 
     }
+
+    var colorArray = arrayOf("#ff0000", "#ff8000", "#ffbf00", "#ffff00", "#bfff00", "#80ff00", "#40ff00", "#00ff00",
+            "#00ff40", "#00ff80", "#00ffbf", "#00ffff", "#00bfff", "#0080ff", "#0040ff", "#0000ff", "#4000ff",
+            "#8000ff", "#bf00ff", "#ff00ff", "#ff00bf", "#ff0080", "#ff0040", "#ff0000");
 
 
 }

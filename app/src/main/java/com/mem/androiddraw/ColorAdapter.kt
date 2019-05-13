@@ -11,11 +11,6 @@ class ColorAdapter : BaseAdapter{
     private var Context: android.content.Context? = null;
     var ColorList: MutableList<Int>? = null;
 
-    var StrColors = arrayOf("BLUE", "BLACK", "CYAN", "DKGRAY", "GRAY", "LTGRAY",
-            "MAGENTA", "RED", "WHITE", "YELLOW", "PURPLE",
-            "FUCHSIA", "AQUA", "ORANGERED", "MAROON", "LIME", "NAVY", "GOLDENROD"
-            , "BISQUE", "OLIVE", "GOLD");
-
     constructor(contect: android.content.Context, lst: MutableList<Int>?){
         this?.Context = contect;
         this?.ColorList = lst;
@@ -32,11 +27,7 @@ class ColorAdapter : BaseAdapter{
 
         var Clr = VIEW?.findViewById<TextView>(R.id.textView)
 
-        Clr?.text = StrColors[position];
-        if (StrColors[position] == "BLACK")
-            Clr?.setTextColor(Color.rgb(255,255,255));
-        else
-            Clr?.setTextColor(Color.rgb(0,0,0));
+        Clr?.text = " ";
         Clr?.setBackgroundColor(ColorList!![position]);
 
         return VIEW;
