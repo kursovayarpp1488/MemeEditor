@@ -7,7 +7,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher_web"
-        android:label="Mem Editor"
+        android:label="Meme Editor"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -21,6 +21,7 @@
         <activity android:name=".ImageActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".ColorChoice" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".ImageChoice" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
 
 </manifest>

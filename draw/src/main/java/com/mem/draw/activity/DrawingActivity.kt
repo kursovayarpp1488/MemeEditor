@@ -42,7 +42,7 @@ class DrawingActivity : AppCompatActivity() {
 
 
         if (ImgId != Int.MIN_VALUE) {
-            //tmpDRW.setBackgroundResource(R.drawable.fire);
+            tmpDRW.setBackgroundResource(ImgId);
             tmpClayout.setBackgroundColor(Color.WHITE);
             tmpIMCLOSE.setBackgroundColor(Color.WHITE);
             tmpDRW.CurrentColor = Color.WHITE;

@@ -53,6 +53,10 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(intent2, REQUEST_CODE_COLOR);
         }
 
+        SImage.setOnClickListener{
+            var intent3 = android.content.Intent(this@MainActivity, ImageChoice::class.java);
+            startActivityForResult(intent3, REQUEST_CODE_IMG);
+        }
         fab_add_draw.setOnClickListener {
 
             val intent = Intent(this, DrawingActivity::class.java)
@@ -64,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun getFilesPath(): ArrayList<String>{
         val resultList = ArrayList<String>()
-        val imageDir = "${Environment.DIRECTORY_PICTURES}/Android Draw/"
+        val imageDir = "${Environment.DIRECTORY_PICTURES}/Meme Editor/"
         val path = Environment.getExternalStoragePublicDirectory(imageDir)
         path.mkdirs()
         val imageList = path.listFiles()
@@ -131,7 +135,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun saveImage(bitmap: Bitmap, fileName: String) {
-        val imageDir = "${Environment.DIRECTORY_PICTURES}/Android Draw/"
+        val imageDir = "${Environment.DIRECTORY_PICTURES}/Meme Editor/"
         val path = Environment.getExternalStoragePublicDirectory(imageDir)
         Log.e("path",path.toString())
         val file = File(path, "$fileName.png")
