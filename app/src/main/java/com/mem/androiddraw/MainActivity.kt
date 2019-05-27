@@ -12,6 +12,7 @@ import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
+import android.provider.MediaStore
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.util.Log
@@ -27,10 +28,16 @@ import kotlin.collections.ArrayList
 private const val REQUEST_CODE_DRAW = 101
 private const val REQUEST_CODE_COLOR = 103;
 private const val REQUEST_CODE_IMG = 104;
+private const val REQUEST_CODE_CAMERA = 105;
+
+
 
 private const val PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 102
 var ColorNubm = Int.MIN_VALUE;
 var ImgId = Int.MIN_VALUE;
+var ImgCam: Bitmap? = null;
+
+
 class MainActivity : AppCompatActivity() {
 
     lateinit var adapter: DrawAdapter
@@ -48,20 +55,36 @@ class MainActivity : AppCompatActivity() {
             recycler_view.adapter = adapter
         }
 
+
+
         SColor.setOnClickListener{
             var intent2 = android.content.Intent(this@MainActivity, ColorChoice::class.java)
             startActivityForResult(intent2, REQUEST_CODE_COLOR);
         }
 
+
+
         SImage.setOnClickListener{
             var intent3 = android.content.Intent(this@MainActivity, ImageChoice::class.java);
             startActivityForResult(intent3, REQUEST_CODE_IMG);
         }
+
+
+        SCamera.setOnClickListener{
+            var intentTakePhoto = Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            if(intentTakePhoto.resolveActivity(packageManager) != null){
+                startActivityForResult(intentTakePhoto, REQUEST_CODE_CAMERA);
+            }
+        }
+
+
+
         fab_add_draw.setOnClickListener {
 
             val intent = Intent(this, DrawingActivity::class.java)
             intent.putExtra("color", ColorNubm);
             intent.putExtra("imgid", ImgId);
+            intent.putExtra("cambitmap", ImgCam);
             startActivityForResult(intent, REQUEST_CODE_DRAW)
         }
     }
@@ -96,6 +119,12 @@ class MainActivity : AppCompatActivity() {
                 REQUEST_CODE_IMG ->{
                     val result: Int = data.extras.getInt("imgid");
                     ImgId = result;
+                    ColorNubm = Int.MIN_VALUE;
+                }
+
+                REQUEST_CODE_CAMERA->{
+                    ImgCam = data.extras.get("data") as Bitmap?;
+                    ImgId = Int.MIN_VALUE;
                     ColorNubm = Int.MIN_VALUE;
                 }
             }

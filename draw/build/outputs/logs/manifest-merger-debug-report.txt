@@ -29,6 +29,12 @@ ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:6:9-8:65
 		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:8:13-63
 	android:name
 		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:7:13-53
+uses-feature#android.hardware.camera
+ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:10:5-84
+	android:required
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:10:58-81
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:10:19-57
 uses-sdk
 INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml

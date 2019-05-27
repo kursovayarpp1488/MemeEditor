@@ -46,4 +46,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/SImage" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/SCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="8dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:tint="@color/color_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SColor" />
+
 </android.support.constraint.ConstraintLayout>

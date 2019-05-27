@@ -6,6 +6,7 @@ import android.content.res.ColorStateList
 import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.Color
+import android.graphics.drawable.BitmapDrawable
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
@@ -21,6 +22,7 @@ import kotlinx.android.synthetic.main.activity_drawing.*
 import kotlinx.android.synthetic.main.color_palette_view.*
 import java.io.ByteArrayOutputStream
 import java.time.*;
+import kotlin.math.roundToInt
 
 
 class DrawingActivity : AppCompatActivity() {
@@ -34,6 +36,7 @@ class DrawingActivity : AppCompatActivity() {
         }
         var ClrNumb = intent.extras.getInt("color");
         var ImgId = intent.extras.getInt("imgid");
+        var ImgCam = intent.getParcelableExtra<Bitmap?>("cambitmap");
 
 
         var tmpDRW = findViewById<DrawView>(R.id.draw_view);
@@ -53,6 +56,18 @@ class DrawingActivity : AppCompatActivity() {
             tmpClayout.setBackgroundColor(ClrNumb);
             tmpIMCLOSE.setBackgroundColor(ClrNumb);
         }
+        if (ImgCam != null){
+            var newImg = Bitmap.createBitmap(ImgCam, 0, 0, ImgCam.width, (ImgCam.height * 0.9625).roundToInt());
+            var bitmpDrawable = BitmapDrawable(resources, newImg);
+            tmpDRW.setBackground(bitmpDrawable);
+            tmpClayout.setBackgroundColor(Color.WHITE);
+            tmpIMCLOSE.setBackgroundColor(Color.WHITE);
+        }
+
+
+
+
+
         fab_send_drawing.setOnClickListener {
             val bStream = ByteArrayOutputStream()
             val bitmap = draw_view.getBitmap();

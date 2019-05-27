@@ -8,6 +8,10 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="27" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <application>
         <activity
             android:name="com.mem.draw.activity.DrawingActivity"
