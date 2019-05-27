@@ -37,7 +37,6 @@ var ColorNubm = Int.MIN_VALUE;
 var ImgId = Int.MIN_VALUE;
 var ImgCam: Bitmap? = null;
 
-
 class MainActivity : AppCompatActivity() {
 
     lateinit var adapter: DrawAdapter
@@ -72,6 +71,7 @@ class MainActivity : AppCompatActivity() {
 
         SCamera.setOnClickListener{
             var intentTakePhoto = Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
             if(intentTakePhoto.resolveActivity(packageManager) != null){
                 startActivityForResult(intentTakePhoto, REQUEST_CODE_CAMERA);
             }
@@ -114,12 +114,14 @@ class MainActivity : AppCompatActivity() {
                     val result: Int = data.extras.getInt("color");
                     ColorNubm = result;
                     ImgId = Int.MIN_VALUE;
+                    ImgCam = null;
                 }
 
                 REQUEST_CODE_IMG ->{
                     val result: Int = data.extras.getInt("imgid");
                     ImgId = result;
                     ColorNubm = Int.MIN_VALUE;
+                    ImgCam = null;
                 }
 
                 REQUEST_CODE_CAMERA->{
@@ -127,6 +129,7 @@ class MainActivity : AppCompatActivity() {
                     ImgId = Int.MIN_VALUE;
                     ColorNubm = Int.MIN_VALUE;
                 }
+
             }
         }
     }

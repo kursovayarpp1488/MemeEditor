@@ -7,6 +7,7 @@ import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.BitmapDrawable
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
@@ -57,12 +58,13 @@ class DrawingActivity : AppCompatActivity() {
             tmpIMCLOSE.setBackgroundColor(ClrNumb);
         }
         if (ImgCam != null){
-            var newImg = Bitmap.createBitmap(ImgCam, 0, 0, ImgCam.width, (ImgCam.height * 0.9625).roundToInt());
-            var bitmpDrawable = BitmapDrawable(resources, newImg);
+            //var newImg = Bitmap.createBitmap(ImgCam, 0, 0, ImgCam.width, (ImgCam.height * 0.9625).roundToInt());
+            var bitmpDrawable = BitmapDrawable(resources, ImgCam);
             tmpDRW.setBackground(bitmpDrawable);
             tmpClayout.setBackgroundColor(Color.WHITE);
             tmpIMCLOSE.setBackgroundColor(Color.WHITE);
         }
+
 
 
 
