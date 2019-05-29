@@ -102,40 +102,40 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int action_container = 0x7f080012;
-        public static final int action_divider = 0x7f080014;
-        public static final int action_image = 0x7f080015;
-        public static final int action_text = 0x7f08001b;
-        public static final int actions = 0x7f08001c;
-        public static final int async = 0x7f080022;
-        public static final int blocking = 0x7f080026;
-        public static final int bottom = 0x7f080027;
-        public static final int chronometer = 0x7f08002f;
-        public static final int end = 0x7f080049;
-        public static final int forever = 0x7f080056;
-        public static final int icon = 0x7f08005c;
-        public static final int icon_group = 0x7f08005d;
-        public static final int info = 0x7f080072;
-        public static final int italic = 0x7f080074;
-        public static final int item_touch_helper_previous_elevation = 0x7f080075;
-        public static final int left = 0x7f080077;
-        public static final int line1 = 0x7f080078;
-        public static final int line3 = 0x7f080079;
-        public static final int none = 0x7f080084;
-        public static final int normal = 0x7f080085;
-        public static final int notification_background = 0x7f080086;
-        public static final int notification_main_column = 0x7f080087;
-        public static final int notification_main_column_container = 0x7f080088;
-        public static final int right = 0x7f080094;
-        public static final int right_icon = 0x7f080095;
-        public static final int right_side = 0x7f080096;
-        public static final int start = 0x7f0800bd;
-        public static final int tag_transition_group = 0x7f0800c2;
-        public static final int text = 0x7f0800c3;
-        public static final int text2 = 0x7f0800c4;
-        public static final int time = 0x7f0800cb;
-        public static final int title = 0x7f0800cc;
-        public static final int top = 0x7f0800cf;
+        public static final int action_container = 0x7f080013;
+        public static final int action_divider = 0x7f080015;
+        public static final int action_image = 0x7f080016;
+        public static final int action_text = 0x7f08001c;
+        public static final int actions = 0x7f08001d;
+        public static final int async = 0x7f080023;
+        public static final int blocking = 0x7f080027;
+        public static final int bottom = 0x7f080028;
+        public static final int chronometer = 0x7f080030;
+        public static final int end = 0x7f08004a;
+        public static final int forever = 0x7f080057;
+        public static final int icon = 0x7f08005d;
+        public static final int icon_group = 0x7f08005e;
+        public static final int info = 0x7f080073;
+        public static final int italic = 0x7f080075;
+        public static final int item_touch_helper_previous_elevation = 0x7f080076;
+        public static final int left = 0x7f080078;
+        public static final int line1 = 0x7f080079;
+        public static final int line3 = 0x7f08007a;
+        public static final int none = 0x7f080085;
+        public static final int normal = 0x7f080086;
+        public static final int notification_background = 0x7f080087;
+        public static final int notification_main_column = 0x7f080088;
+        public static final int notification_main_column_container = 0x7f080089;
+        public static final int right = 0x7f080095;
+        public static final int right_icon = 0x7f080096;
+        public static final int right_side = 0x7f080097;
+        public static final int start = 0x7f0800be;
+        public static final int tag_transition_group = 0x7f0800c3;
+        public static final int text = 0x7f0800c4;
+        public static final int text2 = 0x7f0800c5;
+        public static final int time = 0x7f0800cc;
+        public static final int title = 0x7f0800cd;
+        public static final int top = 0x7f0800d0;
     }
     public static final class integer {
         private integer() {}

@@ -26,10 +26,29 @@ class DrawAdapter(private val context: Context, private val imageList: ArrayList
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val path = imageList[holder.adapterPosition]
         Glide.with(context).load(path).into(holder.drawImage)
+
+
         holder.drawImage.setOnClickListener {
             val intent = Intent(context, ImageActivity::class.java)
             intent.putExtra(IMAGE_PATH,path)
             context.startActivity(intent)
+        }
+
+
+        holder.drawImage.setOnLongClickListener {
+            var newP: String = "";
+            if (path[0] != 'f')
+                newP = "file://" + path;
+            else
+                newP += path;
+            var pUri = Uri.parse(newP);
+            var intent: Intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_STREAM, pUri)
+                type = "image/png"
+            }
+            context.startActivity(Intent.createChooser(intent, "Share"));
+            return@setOnLongClickListener true;
         }
     }
 
@@ -41,4 +60,6 @@ class DrawAdapter(private val context: Context, private val imageList: ArrayList
         imageList.add(uri.toString())
         notifyItemInserted(imageList.size-1)
     }
+
+
 }

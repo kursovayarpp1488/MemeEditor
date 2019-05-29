@@ -44,6 +44,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this,
@@ -91,7 +93,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun getFilesPath(): ArrayList<String>{
         val resultList = ArrayList<String>()
-        val imageDir = "${Environment.DIRECTORY_PICTURES}/Meme Editor/"
+        val imageDir = "${Environment.DIRECTORY_PICTURES}/Meme_Editor/"
         val path = Environment.getExternalStoragePublicDirectory(imageDir)
         path.mkdirs()
         val imageList = path.listFiles()
@@ -167,7 +169,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun saveImage(bitmap: Bitmap, fileName: String) {
-        val imageDir = "${Environment.DIRECTORY_PICTURES}/Meme Editor/"
+        val imageDir = "${Environment.DIRECTORY_PICTURES}/Meme_Editor/"
         val path = Environment.getExternalStoragePublicDirectory(imageDir)
         Log.e("path",path.toString())
         val file = File(path, "$fileName.png")
