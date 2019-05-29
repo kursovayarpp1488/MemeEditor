@@ -1,0 +1,180 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:2:1-29:12
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\a5a395ad485766895725dea90c945840\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\9ad915d06c123c9deb48574b25217f50\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\e17a126925e648c3683b6959eb0d176f\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\b591697fcbee1a9be6f52c0057bd7974\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\b2006cf9ccff7869c7ec760c0f3ca0b8\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\273553a474eea068b49004ac7ebadb93\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\7d73e5696163ea73f1e4311303b0f7ff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\031c16685068a7ad4b7efb1fb8f87ec2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\7d63523a92fb9a97027ec173b9a198f0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\cf4b04c0c8bc6b647647bc887640852f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\db4492968afc62fda49704091ef0ffdd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\19af3f9ad1aec9bd6ed3a6a373f7613b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\378e9a3e97747f0024f3e33df5374f73\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\98adb0ed6aa65e262ac8b552c06d23c9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\63543c3889a28cc95c13ec38ff543c13\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\919f295f819fbef153182d1b7c9802c0\AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\0c7b8ac0195004858c62f39540dd5acf\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\405b9521331985b700143af538096378\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\5c59d66c878d8dc08da85e95a14c08a4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\0821bbf89ac8aa9c03e1081cae217f34\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+		INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:5:5-81
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:5:22-78
+uses-feature#android.hardware.camera
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:6:5-84
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-15:35
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-15:35
+	android:required
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:6:58-81
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:6:19-57
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:7:5-80
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-80
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-80
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:7:22-77
+application
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:9:5-27:19
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-23:19
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-23:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\e17a126925e648c3683b6959eb0d176f\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\e17a126925e648c3683b6959eb0d176f\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\b2006cf9ccff7869c7ec760c0f3ca0b8\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\b2006cf9ccff7869c7ec760c0f3ca0b8\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\919f295f819fbef153182d1b7c9802c0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\919f295f819fbef153182d1b7c9802c0\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:12:9-36
+	android:roundIcon
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:11:9-49
+	android:allowBackup
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.mem.androiddraw.MainActivity
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:16:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.mem.androiddraw.ImageActivity
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:23:9-24:71
+	android:theme
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:24:13-69
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:23:19-48
+activity#com.mem.androiddraw.ColorChoice
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:25:9-115
+	android:theme
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:25:47-103
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:25:19-46
+activity#com.mem.androiddraw.ImageChoice
+ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:26:9-105
+	android:theme
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:26:47-103
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml:26:19-46
+uses-sdk
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\a5a395ad485766895725dea90c945840\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\a5a395ad485766895725dea90c945840\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\9ad915d06c123c9deb48574b25217f50\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\9ad915d06c123c9deb48574b25217f50\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\e17a126925e648c3683b6959eb0d176f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\e17a126925e648c3683b6959eb0d176f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\b591697fcbee1a9be6f52c0057bd7974\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\b591697fcbee1a9be6f52c0057bd7974\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\b2006cf9ccff7869c7ec760c0f3ca0b8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\b2006cf9ccff7869c7ec760c0f3ca0b8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\273553a474eea068b49004ac7ebadb93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\273553a474eea068b49004ac7ebadb93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\7d73e5696163ea73f1e4311303b0f7ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\7d73e5696163ea73f1e4311303b0f7ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\031c16685068a7ad4b7efb1fb8f87ec2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\031c16685068a7ad4b7efb1fb8f87ec2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\7d63523a92fb9a97027ec173b9a198f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\7d63523a92fb9a97027ec173b9a198f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\cf4b04c0c8bc6b647647bc887640852f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\cf4b04c0c8bc6b647647bc887640852f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\db4492968afc62fda49704091ef0ffdd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\db4492968afc62fda49704091ef0ffdd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\19af3f9ad1aec9bd6ed3a6a373f7613b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\19af3f9ad1aec9bd6ed3a6a373f7613b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\378e9a3e97747f0024f3e33df5374f73\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\378e9a3e97747f0024f3e33df5374f73\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\98adb0ed6aa65e262ac8b552c06d23c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\98adb0ed6aa65e262ac8b552c06d23c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\63543c3889a28cc95c13ec38ff543c13\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\63543c3889a28cc95c13ec38ff543c13\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\919f295f819fbef153182d1b7c9802c0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\919f295f819fbef153182d1b7c9802c0\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\0c7b8ac0195004858c62f39540dd5acf\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\0c7b8ac0195004858c62f39540dd5acf\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\405b9521331985b700143af538096378\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\405b9521331985b700143af538096378\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\5c59d66c878d8dc08da85e95a14c08a4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\5c59d66c878d8dc08da85e95a14c08a4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\0821bbf89ac8aa9c03e1081cae217f34\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Rinat\.gradle\caches\transforms-2\files-2.1\0821bbf89ac8aa9c03e1081cae217f34\AndroidManifest.xml:20:5-44
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+		INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+		ADDED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+		INJECTED from E:\GitRepos\RPP\MemeEditor\app\src\main\AndroidManifest.xml
+activity#com.mem.draw.activity.DrawingActivity
+ADDED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-22:66
+	android:theme
+		ADDED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-63
+	android:name
+		ADDED from [:draw] E:\GitRepos\RPP\MemeEditor\draw\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-65
