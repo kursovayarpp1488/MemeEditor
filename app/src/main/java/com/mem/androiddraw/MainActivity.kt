@@ -29,6 +29,7 @@ private const val REQUEST_CODE_DRAW = 101
 private const val REQUEST_CODE_COLOR = 103;
 private const val REQUEST_CODE_IMG = 104;
 private const val REQUEST_CODE_CAMERA = 105;
+private const val REQUEST_CODE_GALLERY = 106;
 
 
 
@@ -36,6 +37,7 @@ private const val PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 102
 var ColorNubm = Int.MIN_VALUE;
 var ImgId = Int.MIN_VALUE;
 var ImgCam: Bitmap? = null;
+var ImgPath = "";
 
 class MainActivity : AppCompatActivity() {
 
@@ -81,12 +83,22 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        SFilse.setOnClickListener {
+            val intent = Intent()
+            intent.type = "image/*"
+            intent.action = Intent.ACTION_GET_CONTENT
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), REQUEST_CODE_GALLERY);
+        }
+
+
+
         fab_add_draw.setOnClickListener {
 
             val intent = Intent(this, DrawingActivity::class.java)
             intent.putExtra("color", ColorNubm);
             intent.putExtra("imgid", ImgId);
             intent.putExtra("cambitmap", ImgCam);
+            intent.putExtra("gallerypic", ImgPath);
             startActivityForResult(intent, REQUEST_CODE_DRAW)
         }
     }
@@ -117,6 +129,7 @@ class MainActivity : AppCompatActivity() {
                     ColorNubm = result;
                     ImgId = Int.MIN_VALUE;
                     ImgCam = null;
+                    ImgPath = "";
                 }
 
                 REQUEST_CODE_IMG ->{
@@ -124,12 +137,22 @@ class MainActivity : AppCompatActivity() {
                     ImgId = result;
                     ColorNubm = Int.MIN_VALUE;
                     ImgCam = null;
+                    ImgPath = "";
                 }
 
                 REQUEST_CODE_CAMERA->{
                     ImgCam = data.extras.get("data") as Bitmap?;
                     ImgId = Int.MIN_VALUE;
                     ColorNubm = Int.MIN_VALUE;
+                    ImgPath = "";
+                }
+
+                REQUEST_CODE_GALLERY->{
+                    var picUri = data.data as Uri;
+                    ImgPath = picUri.toString();
+                    ImgCam = null;
+                    ColorNubm = Int.MIN_VALUE;
+                    ImgId = Int.MIN_VALUE;
                 }
 
             }

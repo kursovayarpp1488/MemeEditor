@@ -10,6 +10,7 @@ import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.support.constraint.ConstraintLayout
 import android.support.v4.content.res.ResourcesCompat
 import android.support.v4.widget.ImageViewCompat
@@ -38,12 +39,21 @@ class DrawingActivity : AppCompatActivity() {
         var ClrNumb = intent.extras.getInt("color");
         var ImgId = intent.extras.getInt("imgid");
         var ImgCam = intent.getParcelableExtra<Bitmap?>("cambitmap");
+        var ImgUri = Uri.parse(intent.extras["gallerypic"] as String);
 
 
         var tmpDRW = findViewById<DrawView>(R.id.draw_view);
         var tmpIMCLOSE = findViewById<ImageView>(R.id.image_close_drawing);
         var tmpClayout = findViewById<ConstraintLayout>(R.id.draw_tools)
 
+
+        if (ImgUri != null){
+            var tmpBitM = MediaStore.Images.Media.getBitmap(contentResolver, ImgUri);
+            var bitmapDrawable = BitmapDrawable(tmpBitM);
+            tmpDRW.setBackgroundDrawable(bitmapDrawable);
+            tmpClayout.setBackgroundColor(Color.WHITE);
+            tmpIMCLOSE.setBackgroundColor(Color.WHITE);
+        }
 
         if (ImgId != Int.MIN_VALUE) {
             tmpDRW.setBackgroundResource(ImgId);
@@ -64,6 +74,8 @@ class DrawingActivity : AppCompatActivity() {
             tmpClayout.setBackgroundColor(Color.WHITE);
             tmpIMCLOSE.setBackgroundColor(Color.WHITE);
         }
+
+
 
 
 

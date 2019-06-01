@@ -1,4 +1,4 @@
-#Wed May 29 20:27:07 MSK 2019
+#Sat Jun 01 19:19:12 MSK 2019
 path.2=classes_0.dex
 path.1=classes.dex
 path.0=classes.dex
