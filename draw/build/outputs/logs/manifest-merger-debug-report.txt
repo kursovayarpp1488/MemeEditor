@@ -1,0 +1,59 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:2:1-14:12
+	package
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:3:5-27
+		INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+		INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:2:1-14:12
+		INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:2:1-14:12
+		INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:5:22-78
+uses-feature#android.hardware.camera
+ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:6:5-84
+	android:required
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:6:58-81
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:6:19-57
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:7:22-77
+application
+ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:9:5-13:19
+activity#com.mem.draw.activity.DrawingActivity
+ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:10:9-12:65
+	android:theme
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:12:13-63
+	android:name
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml:11:13-53
+uses-sdk
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+		INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+		ADDED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
+		INJECTED from E:\GitRepos\RPP\MemeEditor\draw\src\main\AndroidManifest.xml
