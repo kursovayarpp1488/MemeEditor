@@ -23,6 +23,7 @@ import com.mem.draw.widget.DrawView
 import kotlinx.android.synthetic.main.activity_drawing.*
 import kotlinx.android.synthetic.main.color_palette_view.*
 import java.io.ByteArrayOutputStream
+import java.lang.Exception
 import java.time.*;
 import kotlin.math.roundToInt
 
@@ -39,7 +40,7 @@ class DrawingActivity : AppCompatActivity() {
         var ClrNumb = intent.extras.getInt("color");
         var ImgId = intent.extras.getInt("imgid");
         var ImgCam = intent.getParcelableExtra<Bitmap?>("cambitmap");
-        var ImgUri = Uri.parse(intent.extras["gallerypic"] as String);
+        var ImgUri: Uri? = Uri.parse(intent.extras["gallerypic"] as String);
 
 
         var tmpDRW = findViewById<DrawView>(R.id.draw_view);
@@ -47,10 +48,18 @@ class DrawingActivity : AppCompatActivity() {
         var tmpClayout = findViewById<ConstraintLayout>(R.id.draw_tools)
 
 
+        try {
+
+
         if (ImgUri != null){
             var tmpBitM = MediaStore.Images.Media.getBitmap(contentResolver, ImgUri);
             var bitmapDrawable = BitmapDrawable(tmpBitM);
             tmpDRW.setBackgroundDrawable(bitmapDrawable);
+            tmpClayout.setBackgroundColor(Color.WHITE);
+            tmpIMCLOSE.setBackgroundColor(Color.WHITE);
+        }}
+        catch (e: Exception){
+            tmpDRW.setBackgroundColor(Color.WHITE)
             tmpClayout.setBackgroundColor(Color.WHITE);
             tmpIMCLOSE.setBackgroundColor(Color.WHITE);
         }
